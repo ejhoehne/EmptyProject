@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "EJHListViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,6 +22,10 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
+    
+    EJHListViewController *newController = [EJHListViewController new];
+    UINavigationController *newNavigationController = [[UINavigationController alloc] initWithRootViewController:newController];
+    self.window.rootViewController=newNavigationController;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
