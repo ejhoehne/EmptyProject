@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "NoTViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,6 +19,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    NoTViewController *noTView = [NoTViewController new];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:noTView];
+    self.window.rootViewController = navController;
+    
+    
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
