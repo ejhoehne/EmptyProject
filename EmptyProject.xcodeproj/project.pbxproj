@@ -11,6 +11,8 @@
 		71B57C8919C7705600EF6AE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B57C8819C7705600EF6AE3 /* AppDelegate.m */; };
 		71B57C8B19C7705600EF6AE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71B57C8A19C7705600EF6AE3 /* Images.xcassets */; };
 		71B57C9A19C7705700EF6AE3 /* EmptyProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B57C9919C7705700EF6AE3 /* EmptyProjectTests.m */; };
+		BA776E5E19CBAC800092D7CD /* EJHEmptyProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA776E5C19CBAC800092D7CD /* EJHEmptyProjectViewController.m */; };
+		BA776E5F19CBAC800092D7CD /* EJHEmptyProjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA776E5D19CBAC800092D7CD /* EJHEmptyProjectViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,9 @@
 		71B57C9319C7705700EF6AE3 /* EmptyProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmptyProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71B57C9819C7705700EF6AE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71B57C9919C7705700EF6AE3 /* EmptyProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmptyProjectTests.m; sourceTree = "<group>"; };
+		BA776E5B19CBAC800092D7CD /* EJHEmptyProjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EJHEmptyProjectViewController.h; path = ../EJHEmptyProjectViewController.h; sourceTree = "<group>"; };
+		BA776E5C19CBAC800092D7CD /* EJHEmptyProjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EJHEmptyProjectViewController.m; path = ../EJHEmptyProjectViewController.m; sourceTree = "<group>"; };
+		BA776E5D19CBAC800092D7CD /* EJHEmptyProjectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EJHEmptyProjectViewController.xib; path = ../EJHEmptyProjectViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +90,9 @@
 		71B57C8319C7705600EF6AE3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BA776E5B19CBAC800092D7CD /* EJHEmptyProjectViewController.h */,
+				BA776E5C19CBAC800092D7CD /* EJHEmptyProjectViewController.m */,
+				BA776E5D19CBAC800092D7CD /* EJHEmptyProjectViewController.xib */,
 				71B57C8419C7705600EF6AE3 /* Info.plist */,
 				71B57C8519C7705600EF6AE3 /* main.m */,
 			);
@@ -188,6 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA776E5F19CBAC800092D7CD /* EJHEmptyProjectViewController.xib in Resources */,
 				71B57C8B19C7705600EF6AE3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71B57C8919C7705600EF6AE3 /* AppDelegate.m in Sources */,
+				BA776E5E19CBAC800092D7CD /* EJHEmptyProjectViewController.m in Sources */,
 				71B57C8619C7705600EF6AE3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +391,7 @@
 				71B57C9F19C7705700EF6AE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		71B57CA019C7705700EF6AE3 /* Build configuration list for PBXNativeTarget "EmptyProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -389,6 +400,7 @@
 				71B57CA219C7705700EF6AE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

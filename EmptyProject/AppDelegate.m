@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "EJHEmptyProjectViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,6 +19,29 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    EJHEmptyProjectViewController *newController = [EJHEmptyProjectViewController new];
+    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:newController];
+    self.window.rootViewController = navController;
+    
+    /*NSNumber *launchCount = [[NSUserDefaults standardUserDefaults] objectForKey:@"launchCount"];
+     if (!launchCount) {
+     launchCount = @1;
+     } else {
+     launchCount = @([launchCount integerValue] +1);
+     }
+     NSLog(@"launchCount %@", launchCount);
+     [[NSUserDefaults standardUserDefaults] setObjects:launchCount forKey@"launchCount"];
+     [[nsuserdefaults standarduserdefaults] synchronize];
+    
+    */
+    
+    NSInteger load = [[NSUserDefaults standardUserDefaults] integerForKey:@"launchCount"];
+    [[NSUserDefaults standardUserDefaults] setInteger:load+1 forKey:@"launchCount"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    NSLog(@"%0ld", (long)load);
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
