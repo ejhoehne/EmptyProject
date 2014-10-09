@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "EJHViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    EJHViewController *view = [EJHViewController new];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:view ];
+    self.window.rootViewController = nav;
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
