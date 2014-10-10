@@ -7,6 +7,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EJHViewController">
             <connections>
                 <outlet property="button" destination="WrT-t3-4CV" id="Usc-yD-Lfm"/>
+                <outlet property="imageView" destination="PLm-OX-tXN" id="cnA-GT-IA0"/>
+                <outlet property="progressView" destination="fFg-GJ-hAv" id="4Ya-ma-1go"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -24,6 +26,12 @@
                         <action selector="wiredUp:" destination="-1" eventType="touchUpInside" id="QUC-2i-pPv"/>
                     </connections>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PLm-OX-tXN">
+                    <rect key="frame" x="190" y="236" width="240" height="128"/>
+                </imageView>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fFg-GJ-hAv">
+                    <rect key="frame" x="230" y="392" width="150" height="2"/>
+                </progressView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
         </view>

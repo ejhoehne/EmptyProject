@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <AFNetworking/AFNetworking.h>
 #import <SVProgressHUD/SVProgressHUD.h>
+#import <UIImageView+AFNetworking.h>
 
 @interface EJHViewController : UIViewController
 
