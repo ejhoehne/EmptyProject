@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "EJHViewController.h"
+#import "NSString+FontAwesome.h"
+#import "UIFont+FontAwesome.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +20,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    EJHViewController *viewController = [EJHViewController new];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    self.window.rootViewController = navController;
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 60, 60)];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.font = [UIFont fontWithName:kFontAwesomeFamilyName size:20];
+    label.text = [NSString fontAwesomeIconStringForIconIdentifier:@"fa-github"];
+
+        
+    
+    
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
